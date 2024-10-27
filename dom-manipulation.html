@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		#car{
+			animation: movesideways 3s infinite ease-in-out;
+			position: relative;
+			animation-iteration-count: infinite;
+    		animation-direction: alternate;
+           	transition: left;
+           	top: 0px;
+		}
+
+		@keyframes movesideways{
+			0%{
+				left: 0;
+			}
+			50%{
+				left: 35px;
+			} 
+			100%{
+				left: 0;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div style="height: 100px; width: 100px; background-color: blue;"id="backgroundColor">
+	<div style="height: 30px; width: 30px; background-color: red; margin: auto; margin-top: 10px;"id="car"></div>
+	</div>
+	<div>
+		
+		<label>Background-color:</label>
+		<label style="margin-left: 50px">width:</label>
+		<label style="margin-left: 130px">Height:</label>
+		<label style="margin-left: 120px">Border:</label>
+		<label style="margin-left: 120px">Border-radius:</label>
+		<label style="margin-left: 78px">Display:</label>
+		<label style="margin-left: 115px">Transform</label>
+	</div>
+	<div>
+		<input type="text" name="" placeholder="background-color" onkeyup="changeBackgroundColor(this.value)">
+		<input type="number" name="" placeholder="width" onkeyup="changeWidth(this.value)">
+		<input type="number" name="" placeholder="height" onkeyup="changeHeight(this.value)">
+		<input type="" name="" placeholder="border" onkeyup="changeBorder(this.value)">
+		<input type="" name="" placeholder="borderRadius" onkeyup="changeBorderRadius(this.value)">
+		<input type="" name="" placeholder="display" onkeyup="changeDisplay(this.value)">
+		<input type="" name="" placeholder="transform" onkeyup="changeTransform(this.value)">
+	</div>
+	<div>
+		<h1>SMALLER DIV SECTION</h1>
+		<label>Height:</label>
+		<label style="margin-left: 120px">width:</label>
+	</div>
+	<div>
+		<input type="number" name="" placeholder="lenght" onkeyup="changeLenght(this.value)">
+		<input type="number" name="" placeholder="breadth" onkeyup="changeBreadth(this.value)">
+	</div>
+	<script type="text/javascript">
+		function changeBackgroundColor(color) {
+			document.getElementById('backgroundColor').style.backgroundColor = color;
+		}
+		function changeWidth(width){
+			document.getElementById('backgroundColor').style.width = width + "px";
+		}
+		function changeHeight(height){
+			document.getElementById('backgroundColor').style.height = height + "px";
+		}
+		function changeBorder(border){
+			document.getElementById('backgroundColor').style.border = border;
+		}
+		function changeBorderRadius(borderRadius){
+			document.getElementById('backgroundColor').style.borderRadius = borderRadius;
+		}
+		function changeDisplay(display){
+			document.getElementById('backgroundColor').style.display = display;
+		}
+		function changeTransform(transform){
+			document.getElementById('backgroundColor').style.transform = transform;
+		}
+		function changeLenght(height){
+			document.getElementById('car').style.height = height + "px";
+		}
+		function changeBreadth(width){
+			document.getElementById('car').style.width = width + "px";
+		}
+	</script>
+</body>
+</html>

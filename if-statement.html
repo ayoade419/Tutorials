@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<input type="number" name="" placeholder="first-number" id="firstNumber">
+	<input type="number" name="" placeholder="second-number" id="secondNumber">
+	<button onclick="compare()">compare-value</button>
+	<script type="text/javascript">
+
+		function compare(){
+		var firstNumber = document.getElementById('firstNumber').value;
+		firstNumber = parseInt(firstNumber);
+		var secondNumber = document.getElementById('secondNumber').value;
+		secondNumber = parseInt(secondNumber);
+		console.log(typeof firstNumber);
+		if(firstNumber>secondNumber){ 
+			alert("first number is greater");
+		}else if (firstNumber==secondNumber){
+			alert("both numbers are equal");
+
+		}else{
+			alert("second number is greater");
+
+		}
+		}
+	</script>
+</body>
+</html>

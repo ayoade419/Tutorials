@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<input type="number" name="" placeholder="first-number" id="firstNumber">
+	<input type="number" name="" placeholder="second-number" id="secondNumber">
+	<button onclick="Add()">Add</button>
+	<button onclick="substract()">substract</button>
+	<button onclick="multiply()">multiply</button>
+	<button onclick="divide()">divide</button>
+	<script type="text/javascript">
+		function Add() {
+			var firstNumber = document.getElementById('firstNumber').value;
+			firstNumber = parseInt(firstNumber);
+			var secondNumber = document.getElementById('secondNumber').value;
+			secondNumber = parseInt(secondNumber);
+			var sum = firstNumber + secondNumber;
+			alert(sum);
+			}
+			function substract() {
+				var firstNumber = document.getElementById('firstNumber').value;
+				firstNumber = parseInt(firstNumber);
+				var secondNumber = document.getElementById('secondNumber').value;
+				secondNumber = parseInt(secondNumber);
+				var substract = firstNumber - secondNumber;
+				alert(substract);
+			}
+			function multiply() {
+				var firstNumber = document.getElementById('firstNumber').value;
+				firstNumber = parseInt(firstNumber);
+				var secondNumber = document.getElementById('secondNumber').value;
+				secondNumber = parseInt(secondNumber);
+				var multiply = firstNumber * secondNumber;
+				alert(multiply);
+			}
+			function divide() {
+				var firstNumber = document.getElementById('firstNumber').value;
+				firstNumber = parseInt(firstNumber);
+				var secondNumber = document.getElementById('secondNumber').value;
+				secondNumber = parseInt(secondNumber);
+				var divide = firstNumber / secondNumber;
+				alert(divide);
+			}	
+	</script>
+</body>
+</html>

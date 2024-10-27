@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<input type="number" name="" id="base">
+	<input type="number" name="" id="height">
+	<button onclick="area()">area</button>
+	<script type="text/javascript">
+		function area() {
+			var base = document.getElementById('base').value;
+			base = parseInt(base);
+			var height = document.getElementById('height').value;
+			height = parseInt(height);
+			var area = 1/2*base*height;
+			alert(area);
+		}
+	</script>
+</body>
+</html>

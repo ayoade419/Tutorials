@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		#circle{
+			height: 100px;
+			width: 100px;
+			background-color: black;
+			border-radius: 50px;
+		}
+	</style>
+</head>
+<body>
+	<div id="circle"></div>
+	<button onclick="emulate()">emulate</button>
+	<script type="text/javascript">
+		let circle = {height:"50", width:"50", backgrundColor:"black", borderRadius:"25"};
+		console.log(circle);
+		circle.height ="570";
+		circle.backgrundColor = "green";
+		console.log(circle);
+		function emulate() {
+			var circleElement = document.getElementById('circle');
+			document.getElementById('circle')
+			circleElement.style.height = circle.height + "px";
+			circleElement.style.width = circle.width + "px";
+			circleElement.style.borderRadius = circle.borderRadius + "px";
+			circleElement.style.backgrundColor = circle.backgrundColor;
+		}
+	</script>
+</body>
+</html>

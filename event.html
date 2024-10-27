@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<input type="text" name="" id="country">
+	<button onclick="addCountry()">Add country</button>
+	<button onclick="writeText()" onmouseover="console.log('hover')">click-me</button>
+	<select onchange="alert(this.value)" id="countries">
+		<option selected disabled="">Country</option>
+		<option>Nigeria</option>
+		<option disabled="">Ghana</option>
+		<option>Nigel</option>
+	</select><br>
+	<input type="" name="" id="fruit">
+	<button onclick="addFruit()">Add list</button>
+	<ol onchange="alert(this.value)" id="fruits">
+		<li>pawpaw</li>
+		<li>mango</li>
+		<li>pineapple</li>
+		<li>apple</li>
+	</ol>
+	<script type="text/javascript">
+			function writeText(){
+			console.log("I am a software engineer");
+		}
+		// writeText();
+		function addCountry(){
+			var newCountry = document.getElementById('country').value;
+			if (newCountry=="") {
+				alert("please enter a country name");
+				return;
+			}
+			document.getElementById('countries').innerHTML += '<option>'+newCountry+'</option>';
+		}
+		function addFruit() {
+			var newFruit = document.getElementById('fruit').value;
+			if (newFruit=="") {
+				alert("please enter a fruit name");
+				return;
+			}
+			document.getElementById('fruits').innerHTML += '<li>'+newFruit+'</li>';
+		}
+	</script>
+
+</body>
+</html>

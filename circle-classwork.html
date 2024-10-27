@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<input type="number" name="" id="radius">
+	<button onclick="area()">area</button>
+	<script type="text/javascript">
+		function area() {
+			var radius = document.getElementById('radius').value;
+			radius = parseInt(radius);
+			var pie = 22/7
+			var area = pie* radius* radius;
+			alert(area);
+		}
+	</script>
+</body>
+</html>

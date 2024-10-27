@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<input type="number" name="" placeholder="first-number" id="firstNumber">
+	<button onclick="compare()">compare-value</button>
+	<script type="text/javascript">
+		function compare() {
+			var firstNumber = document.getElementById('firstNumber').value;
+			firstNumber = parseInt(firstNumber);
+			if (firstNumber<5) {
+				alert("firstNumber<5");
+
+				}
+				 if (firstNumber>5) {
+					alert("firstNumber>5");
+			}
+			else if (firstNumber==5) {
+				alert("first number is equal to 5");
+			}
+		}
+	</script>
+</body>
+</html>
